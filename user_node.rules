@@ -25,6 +25,14 @@
 -A ufw-user-input -p tcp --dport 8080 -j ACCEPT
 -A ufw-user-input -p udp --dport 8080 -j ACCEPT
 
+### tuple ### allow any 62050 0.0.0.0/0 any 0.0.0.0/0 in
+-A ufw-user-input -p tcp --dport 62050 -j ACCEPT
+-A ufw-user-input -p udp --dport 62050 -j ACCEPT
+
+### tuple ### allow any 62051 0.0.0.0/0 any 0.0.0.0/0 in
+-A ufw-user-input -p tcp --dport 62051 -j ACCEPT
+-A ufw-user-input -p udp --dport 62051 -j ACCEPT
+
 ### tuple ### allow any 23717 0.0.0.0/0 any 0.0.0.0/0 in
 -A ufw-user-input -p tcp --dport 23717 -j ACCEPT
 -A ufw-user-input -p udp --dport 23717 -j ACCEPT
