@@ -44,6 +44,12 @@
 ### tuple ### allow tcp 8009 0.0.0.0/0 any 193.37.212.136 in
 -A ufw-user-input -p tcp --dport 8009 -s 193.37.212.136 -j ACCEPT
 
+### tuple ### allow tcp 8010 0.0.0.0/0 any 193.37.212.136 in
+-A ufw-user-input -p tcp --dport 8010 -s 193.37.212.136 -j ACCEPT
+
+### tuple ### allow tcp 8008 0.0.0.0/0 any 193.37.212.136 in
+-A ufw-user-input -p tcp --dport 8008 -s 193.37.212.136 -j ACCEPT
+
 ### tuple ### deny any any 2.57.3.0/24 any 0.0.0.0/0 out
 -A ufw-user-output -d 2.57.3.0/24 -j DROP
 
